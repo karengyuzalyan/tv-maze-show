@@ -1,0 +1,9 @@
+@import 'src/index.scss';
+
+.not-found {
+    padding: 1rem;
+
+    .not-found-move-to-text {
+        color: grey;
+    }
+}
