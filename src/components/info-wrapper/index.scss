@@ -1,0 +1,11 @@
+@import 'src/index.scss';
+
+.additional-info{
+  padding: .5rem 1rem;
+  border: 1px solid $show-favorite-color;
+  border-radius: 3px;
+
+  .additional-info-data {
+    color: gray;
+  }
+}

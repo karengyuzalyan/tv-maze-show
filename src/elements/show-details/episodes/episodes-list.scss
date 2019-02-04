@@ -1,0 +1,17 @@
+@import 'src/index.scss';
+
+.episode-number, .episode-release {
+    margin-right: 1rem;
+    color: gray;
+}
+
+.nav-item {
+    cursor: pointer;
+
+    .active {
+        color: $show-favorite-color !important;
+    }
+    &:hover{
+        color: $show-favorite-color;
+    }
+}
