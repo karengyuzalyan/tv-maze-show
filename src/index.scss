@@ -16,6 +16,7 @@ $show-favorite-color: #2cb5ba;
 }
 
 a {
+  color: #6bd2cc !important;
   &:hover{
       text-decoration: none !important;
   }
@@ -57,6 +58,10 @@ $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
   .hidden-sm-down {
     display: none;
+  }
+  
+  .breadcrumbs{
+    display: none;    
   }
 
   .hidden-sm-up {
