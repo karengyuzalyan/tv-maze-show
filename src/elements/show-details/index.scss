@@ -1,0 +1,7 @@
+@import 'src/index.scss';
+
+@media (max-width: $breakpoint-tablet) {
+    .cover-image {
+      margin-bottom: 1rem;
+    }
+  }
