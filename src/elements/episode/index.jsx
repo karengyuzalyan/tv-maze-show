@@ -89,7 +89,7 @@ export class EpisodeUI extends Component {
                     </a>
                 </Col>
                 <Col xs={12} md={8}>
-                  {parser(summary)}
+                  {summary ? parser(summary) : 'We don`t have a summary for Green Wing yet. Hang in there, or go ahead and contribute one.'}
                 </Col>
               </Row>
             </Col>
