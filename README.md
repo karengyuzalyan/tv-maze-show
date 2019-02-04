@@ -1,18 +1,17 @@
 ## The Powerpuff Girls Show
 
 Things what you should do for build the App
-First step:
+
+* first step:
 
 ### `npm install`
 
-after:
+* after:
 
 ### `npm start`
 
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Open [http://localhost:3000](http://localhost:3000) Home Page to view it in the browser.<br>
+In any wrong Url you should be moved to the `Page Not found Page`, f.e. [http://localhost:3000/wrong-url](http://localhost:3000/wrong-url)
 
 ## Running the tests
 
