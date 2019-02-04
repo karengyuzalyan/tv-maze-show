@@ -1,13 +1,20 @@
 // Modules imports
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { ListGroup, ListGroupItem  } from 'reactstrap';
 import { Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
+// Internal imports
+import { EpisodePropTypes } from 'src/prop-types';
 // Css import
 import './episodes-list.scss';
 
-export class EpisodesList extends Component{
+export class EpisodesList extends Component {
+    static propTypes = {
+        episodes: PropTypes.arrayOf(EpisodePropTypes),
+        showID: PropTypes.string,
+    }
 
     render() {
         const { episodes, showID } = this.props;

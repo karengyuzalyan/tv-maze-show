@@ -1,5 +1,6 @@
 // Module imports.
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import {
   Col,
@@ -13,13 +14,30 @@ import { Link } from 'react-router-dom';
 import isEqual from 'lodash/isEqual';
 import moment from 'moment';
 
-// Internal imports.
-// Configs imports
+// Internal imports
+import { EpisodePropTypes } from 'src/prop-types';
 import { configs } from 'src/configs';
 import { getEpisodeByNumber } from 'src/actions'
 import { InfoWrapper } from 'src/components/info-wrapper/index';
 
 export class EpisodeUI extends Component {
+  static propTypes = {
+    episode: EpisodePropTypes,
+    location: PropTypes.shape({
+      pathname: PropTypes.string,
+      search: PropTypes.string,
+    })
+  };
+
+  static defaultProps = {
+    episode: {
+      data: {
+        summary: '',
+      }
+    },
+    location: {},
+  };
+
   componentDidMount() {
     const { getEpisode, location } = this.props;
     const { pathname, search } = location;
@@ -31,7 +49,7 @@ export class EpisodeUI extends Component {
   shouldComponentUpdate(nextProps){
     const { episode } = nextProps;
 
-    return episode && episode.summary ? !isEqual(episode, this.props.episode) : true;
+    return episode ? !isEqual(episode, this.props.episode) : true;
   }
 
   render() {

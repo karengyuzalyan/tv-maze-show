@@ -7,14 +7,20 @@ import { Breadcrumb, BreadcrumbItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
 // Internal imports
+import { ShowDetailsPropTypes, EsisodesListPropTypes } from 'src/prop-types';
+import { InfoWrapper } from 'src/components/info-wrapper/index';
 import { getShowByID, getEpisodesByShow } from 'src/actions'
 import { Episodes } from './episodes';
-import { InfoWrapper } from 'src/components/info-wrapper/index';
 
 // Css imports
 import './index.scss';
 
 export class ShowDetailsUI extends Component {
+  static propTypes = {
+    showData: ShowDetailsPropTypes,
+    episodesList: EsisodesListPropTypes,
+  }.isRequired;
+
   componentDidMount(){
     const {
       match,
@@ -29,7 +35,7 @@ export class ShowDetailsUI extends Component {
 
   render() {
     const { showData, episodesList, match: { params: { id } } } = this.props;
-    console.log(this.props);
+
     if(!(showData && episodesList)) return null;
 
     const {

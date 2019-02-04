@@ -1,16 +1,26 @@
+// Module imports
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { TabContent, TabPane, Nav, NavItem, NavLink } from 'reactstrap';
-
 import classnames from 'classnames';
-
-import groupBy from 'lodash/groupBy';
 import map from 'lodash/map';
+import groupBy from 'lodash/groupBy';
+
+// Internal imports
+import { EsisodesListPropTypes } from 'src/prop-types';
 import { EpisodesList } from './episodes-list';
 
 export class Episodes extends Component {
+  static propTypes = {
+    episodesList: PropTypes.arrayOf(EsisodesListPropTypes),
+  };
+  static defaultProps = {
+    episodesList: []
+  };
+
   state = {
     activeTab: 1
-  }
+  };
 
   /**
    * Function below sets the active tab.
