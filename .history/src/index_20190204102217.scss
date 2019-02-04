@@ -1,0 +1,65 @@
+$show-favorite-color: #2cb5ba;
+
+// The m-y-1 means
+// Margin by y-coordinates(Top and Bottom) and the number 2 means 1 rem.
+.m-y-2 {
+  margin: 2rem 0;
+}
+.m-y-1 {
+  margin: 1rem 0;
+}
+.m-b-1 {
+  margin: 0 0 1rem 0;
+}
+.m-b-2 {
+  margin: 0 0 2rem 0;
+}
+
+a {
+  &:hover{
+      text-decoration: none !important;
+  }
+}
+
+.show-favorite-color {
+  color: $show-favorite-color;
+}
+
+.hidden-sm-up {
+  display: none;
+}
+
+.t-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex
+}
+
+.f-column {
+  flex-direction: column;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+.a-center {
+  align-items: center;
+}
+
+.size-24 {
+  font-size: 24px;
+}
+
+$breakpoint-tablet: 768px;
+@media (max-width: $breakpoint-tablet) {
+  .hidden-sm-down {
+    display: none;
+  }
+
+  .hidden-sm-up {
+    display: block;
+  }
+}
