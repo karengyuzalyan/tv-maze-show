@@ -12,11 +12,11 @@ import {
 const axios = base.create({
   baseURL: configs.apiUrl
 });
-  
-export function getShowByID(id) {
-    console.log(id, 'ID')
+
+// The Function bellow received the ID argument for getting the Show information.
+export function getShowByID(ID) {
     return dispatch => {
-        axios.get(`/shows/${id}`)
+        axios.get(`/shows/${ID}`)
         .then(res => {
             dispatch({ type: GET_SHOW_BY_ID_SUCCESS, data: res });
         })
@@ -26,6 +26,7 @@ export function getShowByID(id) {
     };
 }
 
+// The Function bellow received the query for getting the Episode information by Show, Season and Number of episode.
 export function getEpisodeByNumber(query) {
     return dispatch => {
         axios.get(`${query}`)
@@ -38,9 +39,10 @@ export function getEpisodeByNumber(query) {
     };
 }
 
-export function getEpisodesByShow(id) {
+// The Function bellow received the ID argument for getting the Episodes list by Show ID.
+export function getEpisodesByShow(ID) {
     return dispatch => {
-        axios.get(`/shows/${id}/episodes`)
+        axios.get(`/shows/${ID}/episodes`)
         .then(res => {
             dispatch({ type: GET_EPISODES_BY_SHOW_SUCCESS, data: res });
         })

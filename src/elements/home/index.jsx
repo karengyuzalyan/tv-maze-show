@@ -35,12 +35,12 @@ export function Home() {
         onReady={onReady}
       />
       <div className="content d-flex f-column a-center">
-        <h2>Welcome To</h2>
+        <h2 className="home-title">Welcome To</h2>
         <Link to={`/shows/${configs.SHOW_ID}/details`} title="Please click here to move to the Show Details page">
           <h2 className="show-title">The Powerpuff Girls</h2>
         </Link>
-        <h2>Show</h2>
-        <h2>Home Page</h2>
+        <h2 className="home-title">Show</h2>
+        <h2 className="home-title">Home Page</h2>
       </div>
     </div>
   );
