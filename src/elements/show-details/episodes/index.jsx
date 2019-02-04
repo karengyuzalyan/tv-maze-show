@@ -7,12 +7,23 @@ import map from 'lodash/map';
 import groupBy from 'lodash/groupBy';
 
 // Internal imports
-import { EsisodesListPropTypes } from 'src/prop-types';
 import { EpisodesList } from './episodes-list';
 
 export class Episodes extends Component {
   static propTypes = {
-    episodesList: PropTypes.arrayOf(EsisodesListPropTypes),
+    episodesList: PropTypes.arrayOf(PropTypes.shape({
+      airstamp: PropTypes.string,
+      image: PropTypes.shape({}),
+      summary: PropTypes.string,
+      airdate: PropTypes.string,
+      runtime: PropTypes.number,
+      airtime: PropTypes.string,
+      number: PropTypes.number,
+      season: PropTypes.number,
+      name: PropTypes.string,
+      url: PropTypes.string,
+      id: PropTypes.number,
+  })),
   };
   static defaultProps = {
     episodesList: []
