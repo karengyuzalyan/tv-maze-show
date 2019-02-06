@@ -2,9 +2,9 @@
 import React, { Component } from 'react'; 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Component imports
-import { ShowDetails } from 'src/elements/show-details';
+import ShowDetails from 'src/elements/show-details/containers';
 import { NotFound } from 'src/elements/not-found';
-import { Episode } from 'src/elements/episode';
+import Episode from 'src/elements/episode/containers';
 import { Home } from 'src/elements/home';
 // Css import
 import 'bootstrap/dist/css/bootstrap.css';

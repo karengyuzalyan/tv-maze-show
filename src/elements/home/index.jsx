@@ -12,7 +12,7 @@ import { configs } from 'src/configs';
 import './styles.scss';
 
 // Youtube video options
-const OPTIONS = {
+const YOUTUBE_VIDEO_OPTS = {
   height: '300',
   width: '100%',
   frameborder: "0",
@@ -31,7 +31,7 @@ export function Home() {
     <Container className="home d-flex a-center f-column">
       <YouTube
         videoId="5lYZcIC6bqU"
-        opts={OPTIONS}
+        opts={YOUTUBE_VIDEO_OPTS}
         className="youtube-video"
         autoplay
         onReady={onReady}

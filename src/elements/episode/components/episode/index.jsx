@@ -1,7 +1,6 @@
 // Module imports.
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
 import {
   Col,
   Row,
@@ -16,10 +15,9 @@ import { BreadCrumbs } from 'src/components/breadcrumbs/index';
 import { InfoWrapper } from 'src/components/info-wrapper/index';
 import { Loader } from 'src/components/loader/index';
 import { EpisodePropTypes } from 'src/prop-types';
-import { getEpisodeByNumber } from 'src/actions'
 import { configs } from 'src/configs';
 
-export class EpisodeUI extends Component {
+export class Episode extends Component {
   static propTypes = {
     episode: EpisodePropTypes,
     location: PropTypes.shape({
@@ -113,20 +111,3 @@ export class EpisodeUI extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  const { episode: { data, pending } } = state
-  return { 
-    episode: data,
-    pending
-  }
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    getEpisode: (query) => {
-      dispatch(getEpisodeByNumber(query));
-    },
-  };
-};
-
-export const Episode = connect(mapStateToProps, mapDispatchToProps)(EpisodeUI);

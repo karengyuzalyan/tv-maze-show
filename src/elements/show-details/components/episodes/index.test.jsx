@@ -1,14 +1,9 @@
 // Module imports
 import React from 'react';
-import Enzyme from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { shallow } from 'enzyme';
+import { shallow } from 'src/configs';
 
 // Internal imports
 import { Episodes } from './index';
-
-// Configuration of enzyme
-Enzyme.configure({ adapter: new Adapter() });
 
 const props = {
   episodesList: [{

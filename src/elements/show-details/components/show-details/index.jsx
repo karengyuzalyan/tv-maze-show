@@ -4,20 +4,18 @@ import PropTypes from 'prop-types';
 import get from 'lodash/get';
 import parser from 'html-react-parser';
 import { Container, Row, Col } from 'reactstrap';
-import { connect } from 'react-redux';
 
 // Internal imports
 import { ShowDetailsPropTypes, EpisodesListPropTypes } from 'src/prop-types';
 import { InfoWrapper } from 'src/components/info-wrapper/index';
 import { BreadCrumbs } from 'src/components/breadcrumbs/index';
-import { getShowByID, getEpisodesByShow } from 'src/actions'
 import { Loader } from 'src/components/loader/index';
-import { Episodes } from './components/episodes';
+import { Episodes } from './../episodes';
 
 // Css imports
 import './index.scss';
 
-export class ShowDetailsUI extends Component {
+export class ShowDetails extends Component {
   static propTypes = {
     showData: ShowDetailsPropTypes,
     episodesList: EpisodesListPropTypes,
@@ -103,24 +101,3 @@ export class ShowDetailsUI extends Component {
   }
 }
 
-const mapStateToProps = state => {
-  const { showData, episodesList } = state;
-  return {
-    showData: showData.details,
-    episodesList: episodesList.list,
-    pending: showData.pending && episodesList.pending,
-  }
-};
-
-const mapDispatchToProps = dispatch => {
-  return {
-    getShowDetails: (id) => {
-      dispatch(getShowByID(id));
-    },
-    getEpisodes: (id) => {
-      dispatch(getEpisodesByShow(id));
-    },
-  };
-};
-
-export const ShowDetails = connect(mapStateToProps, mapDispatchToProps)(ShowDetailsUI);
