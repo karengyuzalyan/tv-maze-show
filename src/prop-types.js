@@ -24,7 +24,7 @@ export const EpisodePropTypes = PropTypes.shape({
     id: PropTypes.number,
 });
 
-export const EsisodesListPropTypes = PropTypes.shape({
+export const EpisodesListPropTypes = PropTypes.shape({
     data: PropTypes.arrayOf(EpisodePropTypes),
     statusText: PropTypes.string,
     headers: HeadersPropTypes,

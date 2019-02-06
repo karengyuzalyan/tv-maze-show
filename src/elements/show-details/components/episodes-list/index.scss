@@ -9,9 +9,9 @@
     cursor: pointer;
 
     .active {
-        color: $show-favorite-color !important;
+        color: $show-title-color !important;
     }
     &:hover{
-        color: $show-favorite-color;
+        color: $show-title-color;
     }
 }

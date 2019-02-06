@@ -8,4 +8,11 @@
     .home-title {
         color: gray;
     }
+    $breakpoint-tablet: 768px;
+    @media (min-width: $breakpoint-tablet) {
+        .youtube-video {
+            width: 600px;
+            height: 400px;
+        }
+    }
 }

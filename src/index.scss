@@ -1,4 +1,4 @@
-$show-favorite-color: #2cb5ba;
+$show-title-color: #2cb5ba;
 
 // The m-y-1 means
 // Margin by y-coordinates(Top and Bottom) and the number 2 means 1 rem.
@@ -22,8 +22,8 @@ a {
   }
 }
 
-.show-favorite-color {
-  color: $show-favorite-color;
+.show-title-color {
+  color: $show-title-color;
 }
 
 .hidden-sm-up {
@@ -58,10 +58,6 @@ $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
   .hidden-sm-down {
     display: none;
-  }
-  
-  .breadcrumbs{
-    display: none;    
   }
 
   .hidden-sm-up {

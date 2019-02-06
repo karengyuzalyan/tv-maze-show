@@ -1,0 +1,7 @@
+@import 'src/index.scss';
+
+@media (max-width: $breakpoint-tablet) {
+  .breadcrumbs-wrapper{
+    display: none;    
+  }
+}

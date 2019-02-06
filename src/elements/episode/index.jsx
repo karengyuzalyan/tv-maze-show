@@ -6,19 +6,18 @@ import {
   Col,
   Row,
   Container,
-  Breadcrumb,
-  BreadcrumbItem,
 } from 'reactstrap';
 import parser from 'html-react-parser';
-import { Link } from 'react-router-dom';
-import isEqual from 'lodash/isEqual';
+import get from 'lodash/get';
 import moment from 'moment';
 
 // Internal imports
-import { EpisodePropTypes } from 'src/prop-types';
-import { configs } from 'src/configs';
-import { getEpisodeByNumber } from 'src/actions'
+import { BreadCrumbs } from 'src/components/breadcrumbs/index';
 import { InfoWrapper } from 'src/components/info-wrapper/index';
+import { Loader } from 'src/components/loader/index';
+import { EpisodePropTypes } from 'src/prop-types';
+import { getEpisodeByNumber } from 'src/actions'
+import { configs } from 'src/configs';
 
 export class EpisodeUI extends Component {
   static propTypes = {
@@ -26,7 +25,8 @@ export class EpisodeUI extends Component {
     location: PropTypes.shape({
       pathname: PropTypes.string,
       search: PropTypes.string,
-    })
+    }),
+    pending: PropTypes.number,
   };
 
   static defaultProps = {
@@ -36,6 +36,7 @@ export class EpisodeUI extends Component {
       }
     },
     location: {},
+    pending: 0,
   };
 
   componentDidMount() {
@@ -48,16 +49,17 @@ export class EpisodeUI extends Component {
 
   shouldComponentUpdate(nextProps){
     const { episode } = nextProps;
+    const currentEpisodeID = get(episode, 'data.id', 0);
+    const nextEpisodeID = get(episode, 'data.id', 0);
 
-    return episode ? !isEqual(episode, this.props.episode) : true;
+    return episode && nextEpisodeID ? nextEpisodeID === currentEpisodeID : true;
   }
 
   render() {
-    const { episode } = this.props;
-    if(!episode) return null;
+    const { episode, pending } = this.props;
 
+    const data = get(episode, 'data', {});
     const {
-      data: {
         url,
         name,
         image,
@@ -66,20 +68,21 @@ export class EpisodeUI extends Component {
         airdate,
         airtime,
         summary,
-      }
-    } = episode;
-    const imageSrc = image ? image.original : require('src/no-image-available.jpg');
+    } = data;
+    const imageSrc = image ? image.original : `${configs.BASE_URL}/images/no-image-available.jpg`;
     const airdateFormat = moment(airdate).format('MMM DD, YYYY');
 
     return (
-      <div>
-        <Breadcrumb className="breadcrumbs-wrapper">
-          <BreadcrumbItem><Link to="/">Home</Link></BreadcrumbItem>
-          <BreadcrumbItem><Link to={`/shows/${configs.SHOW_ID}/details`}>The Powerpuff Girls</Link></BreadcrumbItem>
-          <BreadcrumbItem active>{name}</BreadcrumbItem>
-        </Breadcrumb>
+      <Loader status={pending}>
+        <BreadCrumbs
+          breadCrumbs={[
+            { active: false, name: 'Home', url: '/' },
+            { active: false, name: 'The Powerpuff Girls', url: `/shows/${configs.SHOW_ID}/details` },
+            { active: true, name },
+          ]}
+        />
         <Container>
-          <h2 className="m-y-2 show-favorite-color">{name}</h2>
+          <h2 className="m-y-2 show-title-color">{name}</h2>
           <Row>
             <Col xs={12} md={8}>
               <Row>
@@ -105,14 +108,18 @@ export class EpisodeUI extends Component {
             </Col>
           </Row>
         </Container>
-      </div>
+      </Loader>
     );
   }
 }
 
-const mapStateToProps = state => ({
-  episode: state.episode.data
-});
+const mapStateToProps = state => {
+  const { episode: { data, pending } } = state
+  return { 
+    episode: data,
+    pending
+  }
+};
 
 const mapDispatchToProps = dispatch => {
   return {

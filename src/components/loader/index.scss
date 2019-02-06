@@ -1,0 +1,10 @@
+@import 'src/index.scss';
+
+
+.loader-wrapper {    
+    .loader {
+        position: fixed;
+        top: 45%;
+        left: 50%;
+    }
+}

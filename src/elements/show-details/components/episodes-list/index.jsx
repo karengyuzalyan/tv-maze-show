@@ -5,8 +5,9 @@ import { ListGroup, ListGroupItem  } from 'reactstrap';
 import { Row, Col } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
-// Css import
-import './episodes-list.scss';
+// Internal import
+import { EpisodesListPropTypes } from 'src/prop-types';
+import './index.scss';
 
 export function EpisodesList({ episodes, showID }) {
 
@@ -36,18 +37,6 @@ export function EpisodesList({ episodes, showID }) {
 }
 
 EpisodesList.propTypes = {
-    episodes: PropTypes.arrayOf(PropTypes.shape({
-        airstamp: PropTypes.string,
-        image: PropTypes.shape({}),
-        summary: PropTypes.string,
-        airdate: PropTypes.string,
-        runtime: PropTypes.number,
-        airtime: PropTypes.string,
-        number: PropTypes.number,
-        season: PropTypes.number,
-        name: PropTypes.string,
-        url: PropTypes.string,
-        id: PropTypes.number,
-    })),
+    episodes: PropTypes.arrayOf(EpisodesListPropTypes),
     showID: PropTypes.string,
 }

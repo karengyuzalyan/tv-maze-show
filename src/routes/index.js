@@ -14,10 +14,10 @@ export default class Routes extends Component {
       return (
         <Router>
             <Switch>
-                <Route path="/" exact component={Home}/>
+                <Route path="/" exact render={Home}/>
                 <Route path="/shows/:id/details" exact component={ShowDetails}/>
                 <Route path="/shows/:id/episodebynumber" exact component={Episode} />
-                <Route path="*" component={NotFound} />
+                <Route path="*" render={NotFound} />
             </Switch>
         </Router>);
     }

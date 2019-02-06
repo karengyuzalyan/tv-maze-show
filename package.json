@@ -29,6 +29,7 @@
     "eslint-plugin-import": "2.14.0",
     "eslint-plugin-jsx-a11y": "6.1.2",
     "eslint-plugin-react": "7.11.1",
+    "file-loader": "^2.0.0",
     "fork-ts-checker-webpack-plugin-alt": "0.4.14",
     "fs-extra": "7.0.0",
     "html-react-parser": "^0.6.1",
@@ -53,6 +54,7 @@
     "react-dev-utils": "^7.0.1",
     "react-dom": "^16.7.0",
     "react-icons": "^3.3.0",
+    "react-loading": "^2.0.3",
     "react-redux": "^6.0.0",
     "react-router-dom": "^4.3.1",
     "react-youtube": "^7.9.0",
@@ -63,6 +65,7 @@
     "sass-loader": "7.1.0",
     "style-loader": "0.23.0",
     "terser-webpack-plugin": "1.1.0",
+    "url-loader": "^1.1.1",
     "webpack": "4.19.1",
     "webpack-dev-server": "3.1.14",
     "webpack-manifest-plugin": "2.0.4",
@@ -108,7 +111,8 @@
     ],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+      "src/([^\\.]*)$": "<rootDir>/src/$1.js"
     },
     "moduleFileExtensions": [
       "web.js",
@@ -127,9 +131,5 @@
     "presets": [
       "react-app"
     ]
-  },
-  "devDependencies": {
-    "file-loader": "^2.0.0",
-    "url-loader": "^1.1.1"
   }
 }
