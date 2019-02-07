@@ -1,5 +1,6 @@
 // Moule imports
 import React from 'react';
+import PropTypes from 'prop-types';
 
 // Css imports
 import './index.scss';
@@ -16,3 +17,11 @@ export function InfoWrapper ({ title, info }) {
         </div>
     );
 }
+
+InfoWrapper.propTypes = {
+    info: PropTypes.arrayOf(PropTypes.shape({
+        name: PropTypes.string,
+        data: PropTypes.string,
+    })),
+    title: PropTypes.string,
+}.isRequired

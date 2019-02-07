@@ -24,7 +24,7 @@ export class Episode extends Component {
       pathname: PropTypes.string,
       search: PropTypes.string,
     }),
-    pending: PropTypes.number,
+    pending: PropTypes.bool,
   };
 
   static defaultProps = {
@@ -34,7 +34,7 @@ export class Episode extends Component {
       }
     },
     location: {},
-    pending: 0,
+    pending: true,
   };
 
   componentDidMount() {
@@ -43,14 +43,6 @@ export class Episode extends Component {
     const query = pathname + search;
 
     getEpisode(query);
-  }
-
-  shouldComponentUpdate(nextProps){
-    const { episode } = nextProps;
-    const currentEpisodeID = get(episode, 'data.id', 0);
-    const nextEpisodeID = get(episode, 'data.id', 0);
-
-    return episode && nextEpisodeID ? nextEpisodeID === currentEpisodeID : true;
   }
 
   render() {

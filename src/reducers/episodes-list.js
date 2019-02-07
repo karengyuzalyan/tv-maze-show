@@ -5,9 +5,7 @@ import {
   } from 'src/actions/types';
 
 const INITIAL_STATE = {
-  data: [],
-  status: 200,
-  headers: {}
+  data: []
 };
 
 export default function (state = INITIAL_STATE, action) {

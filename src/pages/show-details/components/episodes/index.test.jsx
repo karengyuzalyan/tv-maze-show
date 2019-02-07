@@ -1,6 +1,6 @@
 // Module imports
 import React from 'react';
-import { shallow } from 'src/configs';
+import { shallow } from 'src/tests-configs';
 
 // Internal imports
 import { Episodes } from './index';
@@ -12,6 +12,7 @@ const props = {
       original: 'Original.jpg'
     },
   }],
+  showID: '11'
 };
 
 describe('src/episodes/index.jsx', () => {

@@ -5,11 +5,11 @@ import ReactLoading from "react-loading";
 
 import './index.scss'
 
-export function Loader(props) {  
+export function Loader(props) {
     return (<div>
         {props.status ?
-            props.children : 
-            <ReactLoading className="loader" type="spinningBubbles" color="#2cb5ba" />
+            <ReactLoading className="loader" type="spinningBubbles" color="#2cb5ba" /> :
+            props.children
         }
     </div>
     )
@@ -17,5 +17,10 @@ export function Loader(props) {
 
 Loader.propTypes = {
     children: PropTypes.arrayOf(PropTypes.element),
-    status: PropTypes.number,
+    status: PropTypes.bool,
+}
+
+Loader.defaultProps = {
+    children: [],
+    status: true,
 }

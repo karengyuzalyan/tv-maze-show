@@ -2,10 +2,10 @@
 import React, { Component } from 'react'; 
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 // Component imports
-import ShowDetails from 'src/elements/show-details/containers';
-import { NotFound } from 'src/elements/not-found';
-import Episode from 'src/elements/episode/containers';
-import { Home } from 'src/elements/home';
+import ShowDetails from 'src/pages/show-details/containers';
+import { NotFound } from 'src/pages/not-found';
+import Episode from 'src/pages/episode/containers';
+import { Home } from 'src/pages/home';
 // Css import
 import 'bootstrap/dist/css/bootstrap.css';
 

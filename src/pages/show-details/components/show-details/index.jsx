@@ -19,11 +19,11 @@ export class ShowDetails extends Component {
   static propTypes = {
     showData: ShowDetailsPropTypes,
     episodesList: EpisodesListPropTypes,
-    pending: PropTypes.number,
+    pending: PropTypes.bool,
   };
 
   static defaultProps = {
-    pending: 0,
+    pending: true,
     showData: {
       data: {
         image: {},

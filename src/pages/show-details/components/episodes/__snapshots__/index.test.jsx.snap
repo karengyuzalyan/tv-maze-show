@@ -14,7 +14,7 @@ ShallowWrapper {
         },
       ]
     }
-    showID=""
+    showID="11"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -55,7 +55,7 @@ ShallowWrapper {
             }
           }
           seasons={Array []}
-          showID=""
+          showID="11"
         />,
       ],
     },
@@ -93,7 +93,7 @@ ShallowWrapper {
             ],
           },
           "seasons": Array [],
-          "showID": "",
+          "showID": "11",
         },
         "ref": null,
         "rendered": null,
@@ -133,7 +133,7 @@ ShallowWrapper {
               }
             }
             seasons={Array []}
-            showID=""
+            showID="11"
           />,
         ],
       },
@@ -171,7 +171,7 @@ ShallowWrapper {
               ],
             },
             "seasons": Array [],
-            "showID": "",
+            "showID": "11",
           },
           "ref": null,
           "rendered": null,

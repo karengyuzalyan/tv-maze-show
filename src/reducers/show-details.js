@@ -7,9 +7,7 @@ import {
 const INITIAL_STATE = {
   data: {
     id: 1
-  },
-  status: 200,
-  headers: {}
+  }
 };
 
 export default function (state = INITIAL_STATE, action) {
