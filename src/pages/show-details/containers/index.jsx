@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { getShowByID, getEpisodesByShow } from 'src/actions'
+import { getShowByID, getEpisodesByShow } from 'src/actions/index'
 import { ShowDetails } from './../components/show-details';
 
 const mapStateToProps = state => {

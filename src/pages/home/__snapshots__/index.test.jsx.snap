@@ -1,0 +1,443 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/pages/home/index.jsx <Home /> should render and match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Home />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <YouTube
+          autoplay={true}
+          className="youtube-video"
+          containerClassName=""
+          id={null}
+          onEnd={[Function]}
+          onError={[Function]}
+          onPause={[Function]}
+          onPlay={[Function]}
+          onPlaybackQualityChange={[Function]}
+          onPlaybackRateChange={[Function]}
+          onReady={[Function]}
+          onStateChange={[Function]}
+          opts={
+            Object {
+              "frameborder": "0",
+              "height": "300",
+              "width": "100%",
+            }
+          }
+          videoId="5lYZcIC6bqU"
+        />,
+        <div
+          className="Container d-flex f-column a-center"
+        >
+          <h2
+            className="home-title"
+          >
+            Welcome To
+          </h2>
+          <Link
+            replace={false}
+            title="Please click here to move to the Show Details page"
+            to="/shows/6771/details"
+          >
+            <h2
+              className="show-title"
+            >
+              The Powerpuff Girls
+            </h2>
+          </Link>
+          <h2
+            className="home-title"
+          >
+            Show
+          </h2>
+          <h2
+            className="home-title"
+          >
+            Home Page
+          </h2>
+        </div>,
+      ],
+      "className": "home d-flex a-center f-column",
+      "tag": "div",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "autoplay": true,
+          "className": "youtube-video",
+          "containerClassName": "",
+          "id": null,
+          "onEnd": [Function],
+          "onError": [Function],
+          "onPause": [Function],
+          "onPlay": [Function],
+          "onPlaybackQualityChange": [Function],
+          "onPlaybackRateChange": [Function],
+          "onReady": [Function],
+          "onStateChange": [Function],
+          "opts": Object {
+            "frameborder": "0",
+            "height": "300",
+            "width": "100%",
+          },
+          "videoId": "5lYZcIC6bqU",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="home-title"
+            >
+              Welcome To
+            </h2>,
+            <Link
+              replace={false}
+              title="Please click here to move to the Show Details page"
+              to="/shows/6771/details"
+            >
+              <h2
+                className="show-title"
+              >
+                The Powerpuff Girls
+              </h2>
+            </Link>,
+            <h2
+              className="home-title"
+            >
+              Show
+            </h2>,
+            <h2
+              className="home-title"
+            >
+              Home Page
+            </h2>,
+          ],
+          "className": "Container d-flex f-column a-center",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Welcome To",
+              "className": "home-title",
+            },
+            "ref": null,
+            "rendered": "Welcome To",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": <h2
+                className="show-title"
+              >
+                The Powerpuff Girls
+              </h2>,
+              "replace": false,
+              "title": "Please click here to move to the Show Details page",
+              "to": "/shows/6771/details",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "The Powerpuff Girls",
+                "className": "show-title",
+              },
+              "ref": null,
+              "rendered": "The Powerpuff Girls",
+              "type": "h2",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Show",
+              "className": "home-title",
+            },
+            "ref": null,
+            "rendered": "Show",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Home Page",
+              "className": "home-title",
+            },
+            "ref": null,
+            "rendered": "Home Page",
+            "type": "h2",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <YouTube
+            autoplay={true}
+            className="youtube-video"
+            containerClassName=""
+            id={null}
+            onEnd={[Function]}
+            onError={[Function]}
+            onPause={[Function]}
+            onPlay={[Function]}
+            onPlaybackQualityChange={[Function]}
+            onPlaybackRateChange={[Function]}
+            onReady={[Function]}
+            onStateChange={[Function]}
+            opts={
+              Object {
+                "frameborder": "0",
+                "height": "300",
+                "width": "100%",
+              }
+            }
+            videoId="5lYZcIC6bqU"
+          />,
+          <div
+            className="Container d-flex f-column a-center"
+          >
+            <h2
+              className="home-title"
+            >
+              Welcome To
+            </h2>
+            <Link
+              replace={false}
+              title="Please click here to move to the Show Details page"
+              to="/shows/6771/details"
+            >
+              <h2
+                className="show-title"
+              >
+                The Powerpuff Girls
+              </h2>
+            </Link>
+            <h2
+              className="home-title"
+            >
+              Show
+            </h2>
+            <h2
+              className="home-title"
+            >
+              Home Page
+            </h2>
+          </div>,
+        ],
+        "className": "home d-flex a-center f-column",
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "autoplay": true,
+            "className": "youtube-video",
+            "containerClassName": "",
+            "id": null,
+            "onEnd": [Function],
+            "onError": [Function],
+            "onPause": [Function],
+            "onPlay": [Function],
+            "onPlaybackQualityChange": [Function],
+            "onPlaybackRateChange": [Function],
+            "onReady": [Function],
+            "onStateChange": [Function],
+            "opts": Object {
+              "frameborder": "0",
+              "height": "300",
+              "width": "100%",
+            },
+            "videoId": "5lYZcIC6bqU",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="home-title"
+              >
+                Welcome To
+              </h2>,
+              <Link
+                replace={false}
+                title="Please click here to move to the Show Details page"
+                to="/shows/6771/details"
+              >
+                <h2
+                  className="show-title"
+                >
+                  The Powerpuff Girls
+                </h2>
+              </Link>,
+              <h2
+                className="home-title"
+              >
+                Show
+              </h2>,
+              <h2
+                className="home-title"
+              >
+                Home Page
+              </h2>,
+            ],
+            "className": "Container d-flex f-column a-center",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Welcome To",
+                "className": "home-title",
+              },
+              "ref": null,
+              "rendered": "Welcome To",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <h2
+                  className="show-title"
+                >
+                  The Powerpuff Girls
+                </h2>,
+                "replace": false,
+                "title": "Please click here to move to the Show Details page",
+                "to": "/shows/6771/details",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "The Powerpuff Girls",
+                  "className": "show-title",
+                },
+                "ref": null,
+                "rendered": "The Powerpuff Girls",
+                "type": "h2",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Show",
+                "className": "home-title",
+              },
+              "ref": null,
+              "rendered": "Show",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Home Page",
+                "className": "home-title",
+              },
+              "ref": null,
+              "rendered": "Home Page",
+              "type": "h2",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

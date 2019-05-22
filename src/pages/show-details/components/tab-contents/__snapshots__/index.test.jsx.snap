@@ -1,20 +1,25 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`src/episodes/index.jsx <Episodes /> should render and match snapshot 1`] = `
+exports[`src/tab-content/index.jsx <TabContents /> should render and match snapshot 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Episodes
-    episodesList={
+  Symbol(enzyme.__unrendered__): <TabContents
+    activeTab={1}
+    episodesBySeasons={
       Array [
-        Object {
-          "image": Object {
-            "original": "Original.jpg",
+        Array [
+          Object {
+            "id": 1,
+            "image": Object {
+              "original": "Original.jpg",
+            },
+            "name": "Episode",
           },
-          "name": "Episode",
-        },
+        ],
       ]
     }
-    showID="11"
+    seasons={Array []}
+    showID="2"
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -28,157 +33,161 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "class",
     "props": Object {
+      "activeTab": 1,
       "children": Array [
-        <NavItems
-          activeTab={1}
-          seasons={
-            Array [
-              "undefined",
-            ]
-          }
-          toggleTabs={[Function]}
-        />,
-        <TabContents
-          activeTab={1}
-          episodesBySeasons={
-            Object {
-              "undefined": Array [
+        <TabPane
+          tabId={0}
+          tag="div"
+        >
+          <EpisodesList
+            episodes={
+              Array [
                 Object {
+                  "id": 1,
                   "image": Object {
                     "original": "Original.jpg",
                   },
                   "name": "Episode",
                 },
-              ],
+              ]
             }
-          }
-          seasons={Array []}
-          showID="11"
-        />,
+            showID="2"
+          />
+        </TabPane>,
       ],
+      "tag": "div",
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": undefined,
+        "key": "0",
         "nodeType": "function",
         "props": Object {
-          "activeTab": 1,
-          "seasons": Array [
-            "undefined",
-          ],
-          "toggleTabs": [Function],
+          "children": <EpisodesList
+            episodes={
+              Array [
+                Object {
+                  "id": 1,
+                  "image": Object {
+                    "original": "Original.jpg",
+                  },
+                  "name": "Episode",
+                },
+              ]
+            }
+            showID="2"
+          />,
+          "tabId": 0,
+          "tag": "div",
         },
         "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "activeTab": 1,
-          "episodesBySeasons": Object {
-            "undefined": Array [
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "episodes": Array [
               Object {
+                "id": 1,
                 "image": Object {
                   "original": "Original.jpg",
                 },
                 "name": "Episode",
               },
             ],
-          },
-          "seasons": Array [],
-          "showID": "11",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <NavItems
-            activeTab={1}
-            seasons={
-              Array [
-                "undefined",
-              ]
-            }
-            toggleTabs={[Function]}
-          />,
-          <TabContents
-            activeTab={1}
-            episodesBySeasons={
-              Object {
-                "undefined": Array [
-                  Object {
-                    "image": Object {
-                      "original": "Original.jpg",
-                    },
-                    "name": "Episode",
-                  },
-                ],
-              }
-            }
-            seasons={Array []}
-            showID="11"
-          />,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {
-            "activeTab": 1,
-            "seasons": Array [
-              "undefined",
-            ],
-            "toggleTabs": [Function],
+            "showID": "2",
           },
           "ref": null,
           "rendered": null,
           "type": [Function],
         },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "activeTab": 1,
+        "children": Array [
+          <TabPane
+            tabId={0}
+            tag="div"
+          >
+            <EpisodesList
+              episodes={
+                Array [
+                  Object {
+                    "id": 1,
+                    "image": Object {
+                      "original": "Original.jpg",
+                    },
+                    "name": "Episode",
+                  },
+                ]
+              }
+              showID="2"
+            />
+          </TabPane>,
+        ],
+        "tag": "div",
+      },
+      "ref": null,
+      "rendered": Array [
         Object {
           "instance": null,
-          "key": undefined,
+          "key": "0",
           "nodeType": "function",
           "props": Object {
-            "activeTab": 1,
-            "episodesBySeasons": Object {
-              "undefined": Array [
+            "children": <EpisodesList
+              episodes={
+                Array [
+                  Object {
+                    "id": 1,
+                    "image": Object {
+                      "original": "Original.jpg",
+                    },
+                    "name": "Episode",
+                  },
+                ]
+              }
+              showID="2"
+            />,
+            "tabId": 0,
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "episodes": Array [
                 Object {
+                  "id": 1,
                   "image": Object {
                     "original": "Original.jpg",
                   },
                   "name": "Episode",
                 },
               ],
+              "showID": "2",
             },
-            "seasons": Array [],
-            "showID": "11",
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
           },
-          "ref": null,
-          "rendered": null,
           "type": [Function],
         },
       ],
-      "type": "div",
+      "type": [Function],
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -205,6 +214,5 @@ ShallowWrapper {
       },
     },
   },
-  Symbol(enzyme.__childContext__): null,
 }
 `;

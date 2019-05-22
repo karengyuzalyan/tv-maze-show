@@ -1,0 +1,317 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/pages/not-found/index.jsx <NotFound /> should render and match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NotFound />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <img
+          alt="Not Found"
+          className="m-b-1 hidden-sm-down"
+          src="http://localhost:3000/images/page-not-found.jpg"
+        />,
+        <div
+          className="hidden-sm-up m-y-2 t-center"
+        >
+          <h1>
+             Ooops!, The Page Not Found
+          </h1>
+        </div>,
+        <h3
+          className="not-found-move-to-text"
+        >
+          You Can Move To
+        </h3>,
+        <Link
+          replace={false}
+          title="Please click here to move to the Show Details page"
+          to="/shows/6771/details"
+        >
+          <h2
+            className="show-title"
+          >
+            The Powerpuff Girls
+          </h2>
+        </Link>,
+        <h3
+          className="not-found-move-to-text"
+        >
+          Show Details Page
+        </h3>,
+      ],
+      "className": "not-found d-flex f-column a-center",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Not Found",
+          "className": "m-b-1 hidden-sm-down",
+          "src": "http://localhost:3000/images/page-not-found.jpg",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <h1>
+             Ooops!, The Page Not Found
+          </h1>,
+          "className": "hidden-sm-up m-y-2 t-center",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Ooops!, The Page Not Found",
+          },
+          "ref": null,
+          "rendered": " Ooops!, The Page Not Found",
+          "type": "h1",
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "You Can Move To",
+          "className": "not-found-move-to-text",
+        },
+        "ref": null,
+        "rendered": "You Can Move To",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <h2
+            className="show-title"
+          >
+            The Powerpuff Girls
+          </h2>,
+          "replace": false,
+          "title": "Please click here to move to the Show Details page",
+          "to": "/shows/6771/details",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "The Powerpuff Girls",
+            "className": "show-title",
+          },
+          "ref": null,
+          "rendered": "The Powerpuff Girls",
+          "type": "h2",
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Show Details Page",
+          "className": "not-found-move-to-text",
+        },
+        "ref": null,
+        "rendered": "Show Details Page",
+        "type": "h3",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <img
+            alt="Not Found"
+            className="m-b-1 hidden-sm-down"
+            src="http://localhost:3000/images/page-not-found.jpg"
+          />,
+          <div
+            className="hidden-sm-up m-y-2 t-center"
+          >
+            <h1>
+               Ooops!, The Page Not Found
+            </h1>
+          </div>,
+          <h3
+            className="not-found-move-to-text"
+          >
+            You Can Move To
+          </h3>,
+          <Link
+            replace={false}
+            title="Please click here to move to the Show Details page"
+            to="/shows/6771/details"
+          >
+            <h2
+              className="show-title"
+            >
+              The Powerpuff Girls
+            </h2>
+          </Link>,
+          <h3
+            className="not-found-move-to-text"
+          >
+            Show Details Page
+          </h3>,
+        ],
+        "className": "not-found d-flex f-column a-center",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Not Found",
+            "className": "m-b-1 hidden-sm-down",
+            "src": "http://localhost:3000/images/page-not-found.jpg",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <h1>
+               Ooops!, The Page Not Found
+            </h1>,
+            "className": "hidden-sm-up m-y-2 t-center",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": " Ooops!, The Page Not Found",
+            },
+            "ref": null,
+            "rendered": " Ooops!, The Page Not Found",
+            "type": "h1",
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "You Can Move To",
+            "className": "not-found-move-to-text",
+          },
+          "ref": null,
+          "rendered": "You Can Move To",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <h2
+              className="show-title"
+            >
+              The Powerpuff Girls
+            </h2>,
+            "replace": false,
+            "title": "Please click here to move to the Show Details page",
+            "to": "/shows/6771/details",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "The Powerpuff Girls",
+              "className": "show-title",
+            },
+            "ref": null,
+            "rendered": "The Powerpuff Girls",
+            "type": "h2",
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Show Details Page",
+            "className": "not-found-move-to-text",
+          },
+          "ref": null,
+          "rendered": "Show Details Page",
+          "type": "h3",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

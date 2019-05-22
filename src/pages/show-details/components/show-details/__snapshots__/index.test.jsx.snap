@@ -1,0 +1,1481 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/pages/show-details/components/show-details/index.jsx <ShowDetails /> should render and match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <ShowDetails
+    episodesList={
+      Object {
+        "data": Array [],
+      }
+    }
+    getEpisodes={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "1",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": "1",
+          },
+        ],
+      }
+    }
+    getShowDetails={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "1",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": "1",
+          },
+        ],
+      }
+    }
+    match={
+      Object {
+        "params": Object {
+          "id": "1",
+        },
+      }
+    }
+    pending={true}
+    showData={
+      Object {
+        "data": Object {
+          "image": Object {},
+          "rating": Object {},
+          "summary": "",
+        },
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <BreadCrumbs
+          breadCrumbs={
+            Array [
+              Object {
+                "active": false,
+                "name": "Home",
+                "url": "/",
+              },
+              Object {
+                "active": true,
+                "name": undefined,
+              },
+            ]
+          }
+        />,
+        <Container
+          tag="div"
+        >
+          <h2
+            className="m-y-2 show-title-color"
+          />
+          <Row
+            tag="div"
+          >
+            <Col
+              md={8}
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs={12}
+            >
+              <Row
+                tag="div"
+              >
+                <Col
+                  md={4}
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                  xs={12}
+                >
+                  <img
+                    alt="The Powerpuff Girls"
+                    className="cover-image"
+                    width="100%"
+                  />
+                </Col>
+                <Col
+                  md={8}
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                  xs={12}
+                />
+              </Row>
+            </Col>
+            <Col
+              md={4}
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs={12}
+            >
+              <InfoWrapper
+                info={
+                  Array [
+                    Object {
+                      "data": undefined,
+                      "name": "Rating",
+                    },
+                    Object {
+                      "data": undefined,
+                      "name": "Show Status",
+                    },
+                    Object {
+                      "data": undefined,
+                      "name": "Show Type",
+                    },
+                  ]
+                }
+                title="Show Info"
+              />
+            </Col>
+            <Col
+              className="m-y-2"
+              md={8}
+              tag="div"
+              widths={
+                Array [
+                  "xs",
+                  "sm",
+                  "md",
+                  "lg",
+                  "xl",
+                ]
+              }
+              xs={12}
+            >
+              <Episodes
+                episodesList={Array []}
+                showID="1"
+              />
+            </Col>
+          </Row>
+        </Container>,
+      ],
+      "status": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "breadCrumbs": Array [
+            Object {
+              "active": false,
+              "name": "Home",
+              "url": "/",
+            },
+            Object {
+              "active": true,
+              "name": undefined,
+            },
+          ],
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <h2
+              className="m-y-2 show-title-color"
+            />,
+            <Row
+              tag="div"
+            >
+              <Col
+                md={8}
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+                xs={12}
+              >
+                <Row
+                  tag="div"
+                >
+                  <Col
+                    md={4}
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                    xs={12}
+                  >
+                    <img
+                      alt="The Powerpuff Girls"
+                      className="cover-image"
+                      width="100%"
+                    />
+                  </Col>
+                  <Col
+                    md={8}
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                    xs={12}
+                  />
+                </Row>
+              </Col>
+              <Col
+                md={4}
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+                xs={12}
+              >
+                <InfoWrapper
+                  info={
+                    Array [
+                      Object {
+                        "data": undefined,
+                        "name": "Rating",
+                      },
+                      Object {
+                        "data": undefined,
+                        "name": "Show Status",
+                      },
+                      Object {
+                        "data": undefined,
+                        "name": "Show Type",
+                      },
+                    ]
+                  }
+                  title="Show Info"
+                />
+              </Col>
+              <Col
+                className="m-y-2"
+                md={8}
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+                xs={12}
+              >
+                <Episodes
+                  episodesList={Array []}
+                  showID="1"
+                />
+              </Col>
+            </Row>,
+          ],
+          "tag": "div",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "m-y-2 show-title-color",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <Col
+                  md={8}
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                  xs={12}
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      md={4}
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                      xs={12}
+                    >
+                      <img
+                        alt="The Powerpuff Girls"
+                        className="cover-image"
+                        width="100%"
+                      />
+                    </Col>
+                    <Col
+                      md={8}
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                      xs={12}
+                    />
+                  </Row>
+                </Col>,
+                <Col
+                  md={4}
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                  xs={12}
+                >
+                  <InfoWrapper
+                    info={
+                      Array [
+                        Object {
+                          "data": undefined,
+                          "name": "Rating",
+                        },
+                        Object {
+                          "data": undefined,
+                          "name": "Show Status",
+                        },
+                        Object {
+                          "data": undefined,
+                          "name": "Show Type",
+                        },
+                      ]
+                    }
+                    title="Show Info"
+                  />
+                </Col>,
+                <Col
+                  className="m-y-2"
+                  md={8}
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                  xs={12}
+                >
+                  <Episodes
+                    episodesList={Array []}
+                    showID="1"
+                  />
+                </Col>,
+              ],
+              "tag": "div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Row
+                    tag="div"
+                  >
+                    <Col
+                      md={4}
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                      xs={12}
+                    >
+                      <img
+                        alt="The Powerpuff Girls"
+                        className="cover-image"
+                        width="100%"
+                      />
+                    </Col>
+                    <Col
+                      md={8}
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                      xs={12}
+                    />
+                  </Row>,
+                  "md": 8,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                  "xs": 12,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": Array [
+                      <Col
+                        md={4}
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                        xs={12}
+                      >
+                        <img
+                          alt="The Powerpuff Girls"
+                          className="cover-image"
+                          width="100%"
+                        />
+                      </Col>,
+                      <Col
+                        md={8}
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                        xs={12}
+                      />,
+                    ],
+                    "tag": "div",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": <img
+                          alt="The Powerpuff Girls"
+                          className="cover-image"
+                          width="100%"
+                        />,
+                        "md": 4,
+                        "tag": "div",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                        "xs": 12,
+                      },
+                      "ref": null,
+                      "rendered": Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "alt": "The Powerpuff Girls",
+                          "className": "cover-image",
+                          "src": undefined,
+                          "width": "100%",
+                        },
+                        "ref": null,
+                        "rendered": null,
+                        "type": "img",
+                      },
+                      "type": [Function],
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "function",
+                      "props": Object {
+                        "children": Array [],
+                        "md": 8,
+                        "tag": "div",
+                        "widths": Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ],
+                        "xs": 12,
+                      },
+                      "ref": null,
+                      "rendered": Array [],
+                      "type": [Function],
+                    },
+                  ],
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <InfoWrapper
+                    info={
+                      Array [
+                        Object {
+                          "data": undefined,
+                          "name": "Rating",
+                        },
+                        Object {
+                          "data": undefined,
+                          "name": "Show Status",
+                        },
+                        Object {
+                          "data": undefined,
+                          "name": "Show Type",
+                        },
+                      ]
+                    }
+                    title="Show Info"
+                  />,
+                  "md": 4,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                  "xs": 12,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "info": Array [
+                      Object {
+                        "data": undefined,
+                        "name": "Rating",
+                      },
+                      Object {
+                        "data": undefined,
+                        "name": "Show Status",
+                      },
+                      Object {
+                        "data": undefined,
+                        "name": "Show Type",
+                      },
+                    ],
+                    "title": "Show Info",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "function",
+                "props": Object {
+                  "children": <Episodes
+                    episodesList={Array []}
+                    showID="1"
+                  />,
+                  "className": "m-y-2",
+                  "md": 8,
+                  "tag": "div",
+                  "widths": Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ],
+                  "xs": 12,
+                },
+                "ref": null,
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "episodesList": Array [],
+                    "showID": "1",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": [Function],
+                },
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+        ],
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <BreadCrumbs
+            breadCrumbs={
+              Array [
+                Object {
+                  "active": false,
+                  "name": "Home",
+                  "url": "/",
+                },
+                Object {
+                  "active": true,
+                  "name": undefined,
+                },
+              ]
+            }
+          />,
+          <Container
+            tag="div"
+          >
+            <h2
+              className="m-y-2 show-title-color"
+            />
+            <Row
+              tag="div"
+            >
+              <Col
+                md={8}
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+                xs={12}
+              >
+                <Row
+                  tag="div"
+                >
+                  <Col
+                    md={4}
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                    xs={12}
+                  >
+                    <img
+                      alt="The Powerpuff Girls"
+                      className="cover-image"
+                      width="100%"
+                    />
+                  </Col>
+                  <Col
+                    md={8}
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                    xs={12}
+                  />
+                </Row>
+              </Col>
+              <Col
+                md={4}
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+                xs={12}
+              >
+                <InfoWrapper
+                  info={
+                    Array [
+                      Object {
+                        "data": undefined,
+                        "name": "Rating",
+                      },
+                      Object {
+                        "data": undefined,
+                        "name": "Show Status",
+                      },
+                      Object {
+                        "data": undefined,
+                        "name": "Show Type",
+                      },
+                    ]
+                  }
+                  title="Show Info"
+                />
+              </Col>
+              <Col
+                className="m-y-2"
+                md={8}
+                tag="div"
+                widths={
+                  Array [
+                    "xs",
+                    "sm",
+                    "md",
+                    "lg",
+                    "xl",
+                  ]
+                }
+                xs={12}
+              >
+                <Episodes
+                  episodesList={Array []}
+                  showID="1"
+                />
+              </Col>
+            </Row>
+          </Container>,
+        ],
+        "status": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "breadCrumbs": Array [
+              Object {
+                "active": false,
+                "name": "Home",
+                "url": "/",
+              },
+              Object {
+                "active": true,
+                "name": undefined,
+              },
+            ],
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <h2
+                className="m-y-2 show-title-color"
+              />,
+              <Row
+                tag="div"
+              >
+                <Col
+                  md={8}
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                  xs={12}
+                >
+                  <Row
+                    tag="div"
+                  >
+                    <Col
+                      md={4}
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                      xs={12}
+                    >
+                      <img
+                        alt="The Powerpuff Girls"
+                        className="cover-image"
+                        width="100%"
+                      />
+                    </Col>
+                    <Col
+                      md={8}
+                      tag="div"
+                      widths={
+                        Array [
+                          "xs",
+                          "sm",
+                          "md",
+                          "lg",
+                          "xl",
+                        ]
+                      }
+                      xs={12}
+                    />
+                  </Row>
+                </Col>
+                <Col
+                  md={4}
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                  xs={12}
+                >
+                  <InfoWrapper
+                    info={
+                      Array [
+                        Object {
+                          "data": undefined,
+                          "name": "Rating",
+                        },
+                        Object {
+                          "data": undefined,
+                          "name": "Show Status",
+                        },
+                        Object {
+                          "data": undefined,
+                          "name": "Show Type",
+                        },
+                      ]
+                    }
+                    title="Show Info"
+                  />
+                </Col>
+                <Col
+                  className="m-y-2"
+                  md={8}
+                  tag="div"
+                  widths={
+                    Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ]
+                  }
+                  xs={12}
+                >
+                  <Episodes
+                    episodesList={Array []}
+                    showID="1"
+                  />
+                </Col>
+              </Row>,
+            ],
+            "tag": "div",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "m-y-2 show-title-color",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": Array [
+                  <Col
+                    md={8}
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                    xs={12}
+                  >
+                    <Row
+                      tag="div"
+                    >
+                      <Col
+                        md={4}
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                        xs={12}
+                      >
+                        <img
+                          alt="The Powerpuff Girls"
+                          className="cover-image"
+                          width="100%"
+                        />
+                      </Col>
+                      <Col
+                        md={8}
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                        xs={12}
+                      />
+                    </Row>
+                  </Col>,
+                  <Col
+                    md={4}
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                    xs={12}
+                  >
+                    <InfoWrapper
+                      info={
+                        Array [
+                          Object {
+                            "data": undefined,
+                            "name": "Rating",
+                          },
+                          Object {
+                            "data": undefined,
+                            "name": "Show Status",
+                          },
+                          Object {
+                            "data": undefined,
+                            "name": "Show Type",
+                          },
+                        ]
+                      }
+                      title="Show Info"
+                    />
+                  </Col>,
+                  <Col
+                    className="m-y-2"
+                    md={8}
+                    tag="div"
+                    widths={
+                      Array [
+                        "xs",
+                        "sm",
+                        "md",
+                        "lg",
+                        "xl",
+                      ]
+                    }
+                    xs={12}
+                  >
+                    <Episodes
+                      episodesList={Array []}
+                      showID="1"
+                    />
+                  </Col>,
+                ],
+                "tag": "div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <Row
+                      tag="div"
+                    >
+                      <Col
+                        md={4}
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                        xs={12}
+                      >
+                        <img
+                          alt="The Powerpuff Girls"
+                          className="cover-image"
+                          width="100%"
+                        />
+                      </Col>
+                      <Col
+                        md={8}
+                        tag="div"
+                        widths={
+                          Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ]
+                        }
+                        xs={12}
+                      />
+                    </Row>,
+                    "md": 8,
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                    "xs": 12,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "children": Array [
+                        <Col
+                          md={4}
+                          tag="div"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                          xs={12}
+                        >
+                          <img
+                            alt="The Powerpuff Girls"
+                            className="cover-image"
+                            width="100%"
+                          />
+                        </Col>,
+                        <Col
+                          md={8}
+                          tag="div"
+                          widths={
+                            Array [
+                              "xs",
+                              "sm",
+                              "md",
+                              "lg",
+                              "xl",
+                            ]
+                          }
+                          xs={12}
+                        />,
+                      ],
+                      "tag": "div",
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": <img
+                            alt="The Powerpuff Girls"
+                            className="cover-image"
+                            width="100%"
+                          />,
+                          "md": 4,
+                          "tag": "div",
+                          "widths": Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ],
+                          "xs": 12,
+                        },
+                        "ref": null,
+                        "rendered": Object {
+                          "instance": null,
+                          "key": undefined,
+                          "nodeType": "host",
+                          "props": Object {
+                            "alt": "The Powerpuff Girls",
+                            "className": "cover-image",
+                            "src": undefined,
+                            "width": "100%",
+                          },
+                          "ref": null,
+                          "rendered": null,
+                          "type": "img",
+                        },
+                        "type": [Function],
+                      },
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "function",
+                        "props": Object {
+                          "children": Array [],
+                          "md": 8,
+                          "tag": "div",
+                          "widths": Array [
+                            "xs",
+                            "sm",
+                            "md",
+                            "lg",
+                            "xl",
+                          ],
+                          "xs": 12,
+                        },
+                        "ref": null,
+                        "rendered": Array [],
+                        "type": [Function],
+                      },
+                    ],
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <InfoWrapper
+                      info={
+                        Array [
+                          Object {
+                            "data": undefined,
+                            "name": "Rating",
+                          },
+                          Object {
+                            "data": undefined,
+                            "name": "Show Status",
+                          },
+                          Object {
+                            "data": undefined,
+                            "name": "Show Type",
+                          },
+                        ]
+                      }
+                      title="Show Info"
+                    />,
+                    "md": 4,
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                    "xs": 12,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "function",
+                    "props": Object {
+                      "info": Array [
+                        Object {
+                          "data": undefined,
+                          "name": "Rating",
+                        },
+                        Object {
+                          "data": undefined,
+                          "name": "Show Status",
+                        },
+                        Object {
+                          "data": undefined,
+                          "name": "Show Type",
+                        },
+                      ],
+                      "title": "Show Info",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "function",
+                  "props": Object {
+                    "children": <Episodes
+                      episodesList={Array []}
+                      showID="1"
+                    />,
+                    "className": "m-y-2",
+                    "md": 8,
+                    "tag": "div",
+                    "widths": Array [
+                      "xs",
+                      "sm",
+                      "md",
+                      "lg",
+                      "xl",
+                    ],
+                    "xs": 12,
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "episodesList": Array [],
+                      "showID": "1",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": [Function],
+                  },
+                  "type": [Function],
+                },
+              ],
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;

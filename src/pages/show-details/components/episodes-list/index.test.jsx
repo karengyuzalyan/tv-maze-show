@@ -3,22 +3,23 @@ import React from 'react';
 import { shallow } from 'src/tests-configs';
 
 // Internal imports
-import { Episodes } from './index';
+import { EpisodesList } from './index';
 
 const props = {
-  episodesList: [{
+  episodes: [{
     name: 'Episode',
     image: {
       original: 'Original.jpg'
     },
+    id: 1,
   }],
   showID: '11'
 };
 
-describe('src/episodes/index.jsx', () => {
-  describe('<Episodes />', () => {
+describe('src/episodes-list/index.jsx', () => {
+  describe('<EpisodesList />', () => {
     test('should render and match snapshot', () => {
-      const component = shallow(<Episodes {...props} />)
+      const component = shallow(<EpisodesList {...props} />)
       expect(component).toMatchSnapshot()
     });
   });

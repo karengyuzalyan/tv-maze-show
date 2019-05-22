@@ -11,9 +11,7 @@ import get from 'lodash/get';
 import moment from 'moment';
 
 // Internal imports
-import { BreadCrumbs } from 'src/components/breadcrumbs/index';
-import { InfoWrapper } from 'src/components/info-wrapper/index';
-import { Loader } from 'src/components/loader/index';
+import { InfoWrapper, BreadCrumbs, Loader } from 'src/components/index';
 import { EpisodePropTypes } from 'src/prop-types';
 import { configs } from 'src/configs';
 

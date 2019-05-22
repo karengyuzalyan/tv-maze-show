@@ -7,9 +7,7 @@ import { Container, Row, Col } from 'reactstrap';
 
 // Internal imports
 import { ShowDetailsPropTypes, EpisodesListPropTypes } from 'src/prop-types';
-import { InfoWrapper } from 'src/components/info-wrapper/index';
-import { BreadCrumbs } from 'src/components/breadcrumbs/index';
-import { Loader } from 'src/components/loader/index';
+import { InfoWrapper, BreadCrumbs, Loader } from 'src/components/index';
 import { Episodes } from './../episodes';
 
 // Css imports

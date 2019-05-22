@@ -1,0 +1,256 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`src/nav-items/index.jsx <NavItems /> should render and match snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <NavItems
+    activeTab={1}
+    seasons={
+      Array [
+        "1",
+        "2",
+      ]
+    }
+    toggleTabs={null}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "function",
+    "props": Object {
+      "children": Array [
+        <NavItem
+          onClick={null}
+          tag="li"
+          value="1"
+        >
+          <NavLink
+            className="active"
+            tag="a"
+          >
+            Season 1
+          </NavLink>
+        </NavItem>,
+        <NavItem
+          onClick={null}
+          tag="li"
+          value="2"
+        >
+          <NavLink
+            className=""
+            tag="a"
+          >
+            Season 2
+          </NavLink>
+        </NavItem>,
+      ],
+      "tabs": true,
+      "tag": "ul",
+      "vertical": false,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "1",
+        "nodeType": "function",
+        "props": Object {
+          "children": <NavLink
+            className="active"
+            tag="a"
+          >
+            Season 1
+          </NavLink>,
+          "onClick": null,
+          "tag": "li",
+          "value": "1",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Season 1",
+            "className": "active",
+            "tag": "a",
+          },
+          "ref": null,
+          "rendered": "Season 1",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "2",
+        "nodeType": "function",
+        "props": Object {
+          "children": <NavLink
+            className=""
+            tag="a"
+          >
+            Season 2
+          </NavLink>,
+          "onClick": null,
+          "tag": "li",
+          "value": "2",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Season 2",
+            "className": "",
+            "tag": "a",
+          },
+          "ref": null,
+          "rendered": "Season 2",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {
+        "children": Array [
+          <NavItem
+            onClick={null}
+            tag="li"
+            value="1"
+          >
+            <NavLink
+              className="active"
+              tag="a"
+            >
+              Season 1
+            </NavLink>
+          </NavItem>,
+          <NavItem
+            onClick={null}
+            tag="li"
+            value="2"
+          >
+            <NavLink
+              className=""
+              tag="a"
+            >
+              Season 2
+            </NavLink>
+          </NavItem>,
+        ],
+        "tabs": true,
+        "tag": "ul",
+        "vertical": false,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "1",
+          "nodeType": "function",
+          "props": Object {
+            "children": <NavLink
+              className="active"
+              tag="a"
+            >
+              Season 1
+            </NavLink>,
+            "onClick": null,
+            "tag": "li",
+            "value": "1",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Season 1",
+              "className": "active",
+              "tag": "a",
+            },
+            "ref": null,
+            "rendered": "Season 1",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "2",
+          "nodeType": "function",
+          "props": Object {
+            "children": <NavLink
+              className=""
+              tag="a"
+            >
+              Season 2
+            </NavLink>,
+            "onClick": null,
+            "tag": "li",
+            "value": "2",
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Season 2",
+              "className": "",
+              "tag": "a",
+            },
+            "ref": null,
+            "rendered": "Season 2",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
